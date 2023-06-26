@@ -1,0 +1,38 @@
+button {
+    width: 3em;
+    height: 3em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 2em;
+    margin: 0.3em;
+    cursor: pointer;
+}
+
+.igual {
+    width: 6.6em;
+    border-radius: 1.6em;
+}
+
+.numbers {
+    background-color: black;
+    border-radius: 1em;
+    width: 22em;
+    padding: 8em 1em 1em;
+}
+
+.resultado {
+    color: white;
+    font-size: 3em;
+    text-align: end;
+    margin-right: 1em;
+}
+
+.orange {
+    background-color: #ff9500;
+    color: white;
+}
+
+.gray {
+    background-color: #505050;
+    color: white;
+}
