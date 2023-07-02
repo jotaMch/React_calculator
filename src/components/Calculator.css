@@ -17,7 +17,6 @@ button {
     background-color: black;
     border-radius: 1em;
     width: 22em;
-    padding: 8em 1em 1em;
 }
 
 .resultado {
@@ -35,4 +34,27 @@ button {
 .gray {
     background-color: #505050;
     color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .numbers {
+        width: 100%;
+    }
+
+    button {
+        width: 2em;
+        height: 2em;
+    }
+
+    .igual {
+        width: 4.5em;
+    }
+}
+
+div {
+    background-color: #fff;
+}
+
+.main {
+    height: 100vh;
 }
