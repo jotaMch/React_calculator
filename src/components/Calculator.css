@@ -1,60 +1,80 @@
+.calc {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+body, .calc {
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 20px;
+    padding: 0.1em 0.1em;
+}
+
+.numbers {
+    width: 40%;
+}
+
+input {
+    width: 18em;
+    height: 4em;
+    margin: 0.4em 0.3em 0.1em;
+
+    padding: 0.4em;
+    font-weight: 900;
+    border-radius: 1.6em;
+}
+
 button {
     width: 3em;
     height: 3em;
     font-size: 1.5em;
     border: none;
+    background-color: grey;
+    color: white;
     border-radius: 2em;
     margin: 0.3em;
     cursor: pointer;
 }
 
-.igual {
-    width: 6.6em;
-    border-radius: 1.6em;
-}
-
 .numbers {
-    background-color: black;
+    background-color: #0e0008;
     border-radius: 1em;
     width: 22em;
-}
-
-.resultado {
-    color: white;
-    font-size: 3em;
-    text-align: end;
-    margin-right: 1em;
-}
+    padding: 0 0.6em;
+}    
 
 .orange {
-    background-color: #ff9500;
-    color: white;
+    background-color: rgb(165, 44, 0);
 }
 
-.gray {
-    background-color: #505050;
-    color: white;
+.ac {
+    width: 3em;
+    background-color: rgb(41, 55, 72);
+    margin: 0.4em 0.3em 0.1em 0.1em;
+    height: 3em;
+    font-size: 1.5em;
 }
 
 @media screen and (max-width: 767px) {
     .numbers {
-        width: 100%;
-    }
-
-    button {
-        width: 2em;
-        height: 2em;
-    }
-
-    .igual {
-        width: 4.5em;
-    }
-}
-
-div {
-    background-color: #fff;
-}
-
-.main {
-    height: 100vh;
+        background-color: #0e0008;
+        border-radius: 1em;
+        width: 22em;
+        padding: 0 0.2em;
+    }    
 }
