@@ -10,13 +10,13 @@ constructor(props) {
 
     this.state = {
         num: 0,
+        changed: false
     };
 }
 
 handleChange(event) {
     this.setState({
-        text: event.target.value,
-        changed: event.target.value.length 
+        text:"",
     });
 }
 
@@ -69,7 +69,7 @@ handleChange(event) {
         <input onChange={this.handleChange.bind(this)}/>
 
 
-            <h1 className='resultado' >{this.state.num}</h1>
+            <h1 onChange={this.handleChange.bind(this)} className='resultado' ></h1>
             <button onClick={this.clear.bind(this)}>AC</button>
             <button onClick={this.alterador.bind(this)}>+/-</button>
             <button onClick={this.porcentage.bind(this)}>%</button>

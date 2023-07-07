@@ -5,34 +5,33 @@ import './components/Calculator.css';
 import './components/Input.js';
 
 class App extends React.Component {
+    constructor(props) {
+      super(props)
 
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      text: "",
-      changed: false
+      this.state = {
+        text: "",
+        changed: false
+      }
     }
-  }
 
-  handleChange(event) {
-    this.setState({
-      text: event.target.value,
-      changed: event.target.value.length > 0
-    });
-  }
+    handleChange(event) {
+      this.setState({
+        text: event.target.value,
+        changed: event.target.value.length > 0
+      });
+    }
 
-  
+    
 
-  render() {
-    return (
-      <div className='main'>
-        
+    render() {
+      return (
+        <div className='main'>
+          
 
-        <Calculator />
-      </div>
-    )
-  }
+          <Calculator />
+        </div>
+      )
+    }
 }
 
 
